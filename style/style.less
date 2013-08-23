@@ -1,0 +1,69 @@
+@import "normalize.css";
+@import "elements";
+@import "config";
+body {background: @0 url('bg.png') repeat;}
+a {
+	color:@7;
+	text-decoration: none;
+	display: block;
+	float: none;
+}
+ul {
+	list-style: none;
+	padding: 6px 4px 8px 6px;
+	margin: 0;
+	width: 180px;
+	float: left;
+}
+input[type="submit"] {display: none;}
+input {
+	background-color:@0;
+	color:@7;
+	border: none;
+	font-family:@font;
+	padding:0;
+}
+#container {
+	background-color:@0;
+	font-family:@font;
+	font-size: 13px;
+	width: 585px;
+	height: 290px;
+	padding: 5px;
+	border: 6px solid @8;
+	color:@8;
+}
+#search {
+	float:left;
+	margin: 0 0 0 6px;
+	padding: 0;
+}
+#links {
+	margin: 7px 0px 0px 2px;
+	font-size: 12px;
+	height: 172px;
+}
+.PS1 {
+	padding: 5px 0px 0px 5px;
+	display: block;
+	width: 585px;
+}
+.PS1:nth-of-type(1)::after {
+	content: " about -@{user}";
+	margin: 0 0 0 6px;
+	font-size: 13px;
+	color: #B8D68C;
+}
+.at::before {content: @user;color:@2;}
+.at {float: left;color:@15;}
+.at::after {content: @host;color:@12;}
+.amper::before {content: ":";color:@15;}
+.amper {float: left;color:@5;}
+.amper::after {content: " >>";color:@1;}
+.main li  {color:@1;a:hover {color:@9;.transition;}}
+.utils li {color:@2;a:hover {color:@10;.transition;}}
+.gfx li   {color:@3;a:hover {color:@11;.transition;}}
+.unix li  {color:@4;a:hover {color:@12;.transition;}}
+.forums li   {color:@5;a:hover {color:@13;.transition;}}
+.bits li  {color:@6;a:hover {color:@14;.transition;}}
+

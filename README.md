@@ -1,4 +1,4 @@
 Startpage
 =========
 
-A browser startpage with links and Startpage search bar
+A movable terminal like browser startpage with links and Startpage search bar
